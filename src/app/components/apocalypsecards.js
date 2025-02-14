@@ -1,3 +1,4 @@
+import Image from "next/image";
 import hackyHacker from "../art/cards/apocalypse/1_hackyhacker.png";
 import infectedOrpheus from "../art/cards/apocalypse/2_infectedorpheus.png";
 import survivorOrpheus from "../art/cards/apocalypse/3_survivororpheus.png";
@@ -12,13 +13,129 @@ import opossum from "../art/cards/apocalypse/11_opossum.png";
 import trojanVirus from "../art/cards/apocalypse/12_trojanvirus.png";
 import murderOfCrows from "../art/cards/apocalypse/13_murderofcrows.png";
 import otter from "../art/cards/apocalypse/14_otter.png";
-import cathorde from "../art/cards/apocalypse/15_cathorde.png";
-import rathorde from "../art/cards/apocalypse/16_rathorde.png";
+import catHorde from "../art/cards/apocalypse/15_cathorde.png";
+import ratHorde from "../art/cards/apocalypse/16_rathorde.png";
 import cat from "../art/cards/apocalypse/17_cat.png";
 import rat from "../art/cards/apocalypse/18_rat.png";
 
 export default function ApocalypseCards() {
-    <div className="flex flex-wrap justify-center xl:justify-between max-w-8x1 gap-8 py-10 w=full">
-        <img className="rounded-lg h-auto max-w-full" src={hackyHacker} alt="Hacky Hacker"/>
-    </div>
+    return(
+        <div className="flex flex-col justify-center items-center text-center py-10">
+            <div className="text-4xl">
+                <p>
+                    wasgud
+                </p>
+            </div>
+            <div className="flex flex-wrap justify-center xl:justify-between max-w-8x1 gap-4 py-2">
+                <div>
+                    <Image
+                    src={hackyHacker}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Hacky Hacker"/>
+                </div>
+                <div>
+                    <Image 
+                    src={infectedOrpheus}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Infected Orpheus"/>
+                </div>
+                <div>
+                    <Image 
+                    src={survivorOrpheus}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Survivor Orpheus"/>
+                </div>
+                <div>
+                    <Image 
+                    src={watcherOrpheus}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Watcher Orpheus"/>
+                </div>
+                <div>
+                    <Image 
+                    src={skullpup}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Skullpup"/>
+                </div>
+                <div>
+                    <Image 
+                    src={bats}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Bats"/>
+                </div>
+                <div>
+                    <Image 
+                    src={trashPanda}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Trash Panda"/>
+                </div>
+                <div>
+                    <Image 
+                    src={hackoon}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Hackoon"/>
+                </div>
+                <div>
+                    <Image 
+                    src={angryGoose}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Angry Goose"/>
+                </div>
+                <div>
+                    <Image 
+                    src={dragon}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Dragon"/>
+                </div>
+                <div>
+                    <Image 
+                    src={opossum}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Opossum"/>
+                </div>
+                <div>
+                    <Image 
+                    src={trojanVirus}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Trojan Virus"/>
+                </div>
+                <div>
+                    <Image 
+                    src={murderOfCrows}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Murder Of Crows"/>
+                </div>
+                <div>
+                    <Image 
+                    src={otter}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Otter"/>
+                </div>
+                <div>
+                    <Image 
+                    src={catHorde}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Cat Horde"/>
+                </div>
+                <div>
+                    <Image 
+                    src={ratHorde}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Rat Horde"/>
+                </div>
+                <div>
+                    <Image 
+                    src={cat}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Cat"/>
+                </div>
+                <div>
+                    <Image 
+                    src={rat}
+                    className="rounded-lg h-auto w-72"  
+                    alt="Rat"/>
+                </div>
+            </div>
+        </div>
+    )
 }
