@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  font-family: var(--font-minecraftia);
+}
+
+p {
+  font-family: var(--font-geo);
+}

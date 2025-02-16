@@ -1,5 +1,18 @@
 import localFont from "next/font/local";
+// import { Geo } from "next/font/google";
 import "./globals.css";
+
+const minecraftia = localFont({
+  src: "./fonts/Minecraftia-Regular.ttf",
+  variable: "--font-minecraftia"
+})
+
+/*const geo = Geo({
+  weight: "400",
+  subsets: "latin",
+  display: "swap",
+  variable: "--font-geo"
+})*/
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

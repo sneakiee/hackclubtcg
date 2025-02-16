@@ -1,4 +1,3 @@
-
 export default function About() {
     return(
         <div className="content-center py-5 m-10">
