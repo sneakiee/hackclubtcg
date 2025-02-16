@@ -1,16 +1,12 @@
-import Image from "next/image";
-import ApocalypseCards from "./components/apocalypsecards";
-import CounterspellCards from "./components/counterspellcards"
+import Cards from "./components/cards"
+import About from "./components/about"
 
 export default function Home() {
   return (
     <main>
-      <div>
-        <ApocalypseCards/>
-      </div>
-      <div>
-        <CounterspellCards/>
-      </div>
+        <About/>
+        
+        <Cards/>
     </main>
   );
 }
