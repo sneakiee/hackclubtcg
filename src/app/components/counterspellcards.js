@@ -6,7 +6,7 @@ import coder from "../art/cards/counterspell/3_coder.png"
 
 export default function CounterspellCards() {
     return(
-        <div className="flex flex-col justify-center items-center text-center py-6">
+        <div className="place-items-center py-16">
             <div className="align-middle">
                 <Image
                 src={counterspellTitle}
@@ -14,7 +14,7 @@ export default function CounterspellCards() {
                 alt="Counterspell Title"
                 />
             </div>
-            <div className="flex flex-wrap justify-center xl:justify-between max-w-8x1 gap-4 py-2">
+            <div className="flex flex-wrap justify-center max-w-8x1 gap-4 py-2">
                 <div>
                     <Image 
                     src={artist}

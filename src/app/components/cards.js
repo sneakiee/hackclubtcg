@@ -3,11 +3,9 @@ import CounterspellCards from "./counterspellcards";
 
 export default function Cards() {
     return(
-        <div>
-            <div>
-                <ApocalypseCards/>
-                <CounterspellCards/>
-            </div>
+        <div className="bg-slate-950 py-10">
+            <ApocalypseCards/>
+            <CounterspellCards/>
         </div>
     )
 }

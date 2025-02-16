@@ -21,14 +21,14 @@ import rat from "../art/cards/apocalypse/18_rat.png"
 
 export default function ApocalypseCards() {
     return(
-        <div className="flex flex-col justify-center items-center text-center py-6">
+        <div className="place-items-center">
             <div className="align-middle">
                 <Image
                 src={apoTitle}
                 className="w-72"
                 alt="Apocalypse Title"/>
             </div>
-            <div className="flex flex-wrap justify-center xl:justify-between max-w-8x1 gap-4 py-2">
+            <div className="flex flex-wrap justify-center max-w-4x1 gap-4 py-2">
                 <div>
                     <Image
                     src={hackyHacker}
