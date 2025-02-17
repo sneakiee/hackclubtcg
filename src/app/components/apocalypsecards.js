@@ -28,7 +28,7 @@ export default function ApocalypseCards() {
                 className="w-72"
                 alt="Apocalypse Title"/>
             </div>
-            <div className="flex flex-wrap justify-center max-w-4x1 gap-4 py-2">
+            <div className="flex flex-wrap justify-center max-w-4xl gap-4 py-2">
                 <div>
                     <Image
                     src={hackyHacker}
@@ -140,4 +140,10 @@ export default function ApocalypseCards() {
             </div>
         </div>
     )
+}
+
+export {
+    hackyHacker, infectedOrpheus, survivorOrpheus, watcherOrpheus, skullpup, bats,
+    trashPanda, hackoon, angryGoose, dragon, opossum, trojanVirus, murderOfCrows, 
+    otter, catHorde, ratHorde, cat, rat
 }

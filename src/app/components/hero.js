@@ -6,7 +6,7 @@ export default function Hero() {
         <div className="bg-slate-950 flex justify-center">
             <Image
             src={title}
-            className="w-full"
+            className="w-full max-w-5xl"
             alt="Icon"
             />
         </div>

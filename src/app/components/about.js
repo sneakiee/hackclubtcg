@@ -1,7 +1,7 @@
 export default function About() {
     return(
-        <div className="bg-slate-800 content-center py-5">
-            <div className="text-center px-10 py-5">
+        <div className="bg-slate-800 place-items-center py-10">
+            <div className="items-center text-center max-w-3xl px-10 py-5">
                 <h1 className="uppercase text-4xl font-bold p-2">
                     What's this?
                 </h1>
@@ -13,7 +13,7 @@ export default function About() {
                     dopamine for collecting cards!
                 </p>
             </div>
-            <div className="text-center px-10 py-5">
+            <div className="items-center text-center max-w-3xl px-10 py-5">
                 <h2 className="text-2xl font-bold p-2">
                     note from dev:
                 </h2>

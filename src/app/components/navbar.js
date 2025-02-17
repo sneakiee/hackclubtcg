@@ -8,11 +8,11 @@ import Title from "../art/title.png"
 
 export default function NavBar(){
     return(
-        <div className="bg-slate-900 flex fixed justify-between items-center top-0 w-full">
+        <div className="bg-slate-900 flex sticky justify-between items-center top-0 w-full">
             <Link href="/">
             <Image
             src={Title}
-            className="object-cover h-24 w-64"
+            className="w-48"
             alt="NavBar Logo"
             />
             </Link>
