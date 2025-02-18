@@ -1,42 +1,37 @@
 "use client";
 import Image from "next/image"
 import React, { useState } from "react"
+import CardShow from "./cardshow"
 import BottleCaps from "./bottlecaps";
-import cardBack from "../art/cards/apocalypse/0_cardback.png"
-import CardShow from "./cardshow";
-import ApocalypseCards from "./apocalypsecards";
-import CounterspellCards from "./counterspellcards";
 
 
 export default function PackRip() {
-
+    const [bCaps, setBCaps] = useState(0)
+        const [gCaps, setGCaps] = useState(0)
+    
+        const handleBCClick = () => {
+            if (bCaps == 4) {
+                setBCaps(bCaps % 4)
+                setGCaps(gCaps + 1)
+            } else {
+                setBCaps(bCaps + 1)
+            }
+        }
+        
+        const removeCaps = () => {
+            setGCaps(gCaps - 5);
+        };
 
     return(
         <div>
-            <div className="flex flex-wrap justify-center items-center py-10">
-                <BottleCaps/>
-            </div>
-            <section className="cards">
-                {[...Array(3)].map((_, index) => (
-                    <CardShow
-                        key={index}
-                        id={`card-${index + 1}`}
-                        frontSrc={cardBack}
-                        frontAlt="Card Back"
-                        backText="dis a card fr"
-                    />
-                ))}
+            <BottleCaps
+                bCaps={bCaps}
+                gCaps={gCaps}
+                handleBCClick={handleBCClick}
+            />
+            <section>
+                <CardShow gCaps={gCaps} removeCaps={removeCaps}/>
             </section>
-            <div className="bg-slate-950 py-10 place-items-center">
-                <div>
-                    <h1 className="uppercase text-5xl font-bold py-10">
-                        collect them all!
-                    </h1>
-                </div>
-                        
-                <ApocalypseCards/>
-                <CounterspellCards/>
-            </div>
         </div>
     )
 }
