@@ -6,16 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.0.10",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "next": "^15.1.7",
+    "react": "19.0.0-rc-de68d2f4-20241204",
+    "react-dom": "19.0.0-rc-de68d2f4-20241204"
   },
   "devDependencies": {
-    "eslint": "^9.39.1",
-    "eslint-config-next": "^16.0.10",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
